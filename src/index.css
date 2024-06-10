@@ -15,3 +15,27 @@
     color: var(--text-color);
   }
 }
+
+/* Add styles for the animated header background */
+.animated-header {
+  background: linear-gradient(45deg, #4a5568, #2d3748, #1a202c);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+/* Add styles for the hover effect on service cards */
+.hover\:shadow-lg:hover {
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1), 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Add styles for the parallax scrolling effect */
+.parallax {
+  background-attachment: fixed;
+  background-size: cover;
+}
