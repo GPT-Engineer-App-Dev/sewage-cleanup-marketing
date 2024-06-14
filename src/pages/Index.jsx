@@ -3,10 +3,10 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col items-center">
-      <header className="bg-white dark:bg-header-bg w-full py-6 shadow-md animated-header">
+      <header className="bg-white dark:bg-header-bg w-full py-6 shadow-md">
         <h1 className="text-4xl text-gray-800 dark:text-text-color font-bold text-center">Sewage Cleaning Experts</h1>
       </header>
-      <main className="flex-1 w-full flex flex-col items-center p-6 parallax">
+      <main className="flex-1 w-full flex flex-col items-center p-6">
         <section className="w-full bg-white dark:bg-header-bg py-12 mb-8 shadow-md text-center">
           <h2 className="text-5xl font-bold mb-4 dark:text-text-color">Professional Sewage Cleaning Services</h2>
           <p className="text-xl text-gray-700 dark:text-text-color mb-6">
@@ -17,19 +17,19 @@ const Index = () => {
           </button>
         </section>
         <section className="w-full max-w-6xl grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
-          <div className="bg-white dark:bg-header-bg p-6 rounded-lg shadow-md hover:shadow-lg">
+          <div className="bg-white dark:bg-header-bg p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-semibold mb-4 dark:text-text-color">Residential Services</h3>
             <p className="text-gray-700 dark:text-text-color">
               Our residential sewage cleaning services ensure your home remains hygienic and free from blockages.
             </p>
           </div>
-          <div className="bg-white dark:bg-header-bg p-6 rounded-lg shadow-md hover:shadow-lg">
+          <div className="bg-white dark:bg-header-bg p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-semibold mb-4 dark:text-text-color">Commercial Services</h3>
             <p className="text-gray-700 dark:text-text-color">
               We offer comprehensive sewage cleaning solutions for commercial properties of all sizes.
             </p>
           </div>
-          <div className="bg-white dark:bg-header-bg p-6 rounded-lg shadow-md hover:shadow-lg">
+          <div className="bg-white dark:bg-header-bg p-6 rounded-lg shadow-md">
             <h3 className="text-2xl font-semibold mb-4 dark:text-text-color">Emergency Services</h3>
             <p className="text-gray-700 dark:text-text-color">
               Our team is available 24/7 to handle any sewage emergencies promptly and efficiently.
