@@ -3,7 +3,7 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 const Index = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
-      <header className="bg-green-600 w-full py-6">
+      <header className="bg-blue-600 w-full py-6">
         <h1 className="text-4xl text-white font-bold text-center">Sewage Cleaning Experts</h1>
       </header>
       <main className="flex-1 flex flex-col items-center justify-center p-6">
@@ -37,21 +37,21 @@ const Index = () => {
           <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
           <div className="flex flex-col items-center space-y-4">
             <div className="flex items-center space-x-2">
-              <FaPhone className="text-green-600" />
+              <FaPhone className="text-blue-600" />
               <span className="text-lg text-gray-700">+1 (234) 567-890</span>
             </div>
             <div className="flex items-center space-x-2">
-              <FaEnvelope className="text-green-600" />
+              <FaEnvelope className="text-blue-600" />
               <span className="text-lg text-gray-700">info@sewagecleaning.com</span>
             </div>
             <div className="flex items-center space-x-2">
-              <FaMapMarkerAlt className="text-green-600" />
+              <FaMapMarkerAlt className="text-blue-600" />
               <span className="text-lg text-gray-700">123 Clean St, Clean City, CL 12345</span>
             </div>
           </div>
         </section>
       </main>
-      <footer className="bg-green-600 w-full py-4">
+      <footer className="bg-blue-600 w-full py-4">
         <p className="text-center text-white">&copy; 2023 Sewage Cleaning Experts. All rights reserved.</p>
       </footer>
     </div>
