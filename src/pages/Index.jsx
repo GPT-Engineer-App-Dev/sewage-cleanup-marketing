@@ -3,8 +3,8 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 const Index = () => {
   return (
     <div className="min-h-screen flex flex-col items-center">
-      <header className="bg-blue-600 dark:bg-header-bg w-full py-6 shadow-md animated-header">
-        <h1 className="text-4xl text-white dark:text-text-color font-bold text-center">Sewage Cleaning Experts</h1>
+      <header className="bg-white dark:bg-header-bg w-full py-6 shadow-md animated-header">
+        <h1 className="text-4xl text-gray-800 dark:text-text-color font-bold text-center">Sewage Cleaning Experts</h1>
       </header>
       <main className="flex-1 w-full flex flex-col items-center p-6 parallax">
         <section className="w-full bg-white dark:bg-header-bg py-12 mb-8 shadow-md text-center">
