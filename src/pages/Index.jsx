@@ -3,12 +3,12 @@ import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
 const Index = () => {
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
-      <header className="bg-blue-600 w-full py-6">
+      <header className="bg-gradient-to-r from-blue-500 to-purple-600 w-full py-6">
         <h1 className="text-4xl text-white font-bold text-center">Sewage Cleaning Experts</h1>
       </header>
-      <main className="flex-1 flex flex-col items-center justify-center p-6">
+      <main className="flex-1 flex flex-col items-center justify-center p-6 bg-gradient-to-b from-white to-gray-100">
         <section className="text-center mb-8">
-          <h2 className="text-3xl font-semibold mb-4">Professional Sewage Cleaning Services</h2>
+          <h2 className="text-3xl font-semibold mb-4 text-purple-700">Professional Sewage Cleaning Services</h2>
           <p className="text-lg text-gray-700">
             We provide top-notch sewage cleaning services to keep your environment clean and safe.
           </p>
@@ -37,21 +37,21 @@ const Index = () => {
           <h2 className="text-3xl font-semibold mb-4">Contact Us</h2>
           <div className="flex flex-col items-center space-y-4">
             <div className="flex items-center space-x-2">
-              <FaPhone className="text-blue-600" />
-              <span className="text-lg text-gray-700">+1 (234) 567-890</span>
+              <FaPhone className="text-purple-700" />
+              <span className="text-lg text-purple-700">+1 (234) 567-890</span>
             </div>
             <div className="flex items-center space-x-2">
-              <FaEnvelope className="text-blue-600" />
-              <span className="text-lg text-gray-700">info@sewagecleaning.com</span>
+              <FaEnvelope className="text-purple-700" />
+              <span className="text-lg text-purple-700">info@sewagecleaning.com</span>
             </div>
             <div className="flex items-center space-x-2">
-              <FaMapMarkerAlt className="text-blue-600" />
-              <span className="text-lg text-gray-700">123 Clean St, Clean City, CL 12345</span>
+              <FaMapMarkerAlt className="text-purple-700" />
+              <span className="text-lg text-purple-700">123 Clean St, Clean City, CL 12345</span>
             </div>
           </div>
         </section>
       </main>
-      <footer className="bg-blue-600 w-full py-4">
+      <footer className="bg-gradient-to-r from-blue-500 to-purple-600 w-full py-4">
         <p className="text-center text-white">&copy; 2023 Sewage Cleaning Experts. All rights reserved.</p>
       </footer>
     </div>
