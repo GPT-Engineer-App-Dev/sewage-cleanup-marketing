@@ -1,6 +1,14 @@
 import { FaPhone, FaEnvelope, FaMapMarkerAlt } from "react-icons/fa";
+import { useHubs, useMainPorts, useSpecificPorts } from "../integrations/supabase/index.js";
 
 const Index = () => {
+  const { data: hubs, error: hubsError, isLoading: hubsLoading } = useHubs();
+  const { data: mainPorts, error: mainPortsError, isLoading: mainPortsLoading } = useMainPorts();
+  const { data: specificPorts, error: specificPortsError, isLoading: specificPortsLoading } = useSpecificPorts();
+
+  if (hubsLoading || mainPortsLoading || specificPortsLoading) return <div>Loading...</div>;
+  if (hubsError || mainPortsError || specificPortsError) return <div>Error loading data</div>;
+
   return (
     <div className="min-h-screen bg-gray-100 flex flex-col items-center justify-center">
       <header className="bg-gradient-to-r from-blue-500 to-purple-600 w-full py-6">
@@ -31,6 +39,39 @@ const Index = () => {
             <p className="text-gray-700">
               Our team is available 24/7 to handle any sewage emergencies promptly and efficiently.
             </p>
+          </div>
+        </section>
+        <section className="text-center mb-8">
+          <h2 className="text-3xl font-semibold mb-4">Hubs</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {hubs.map(hub => (
+              <div key={hub.id} className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-2xl font-semibold mb-4">Hub {hub.id}</h3>
+                <p className="text-gray-700">{hub.image}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="text-center mb-8">
+          <h2 className="text-3xl font-semibold mb-4">Main Ports</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {mainPorts.map(port => (
+              <div key={port.id} className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-2xl font-semibold mb-4">Port {port.id}</h3>
+                <p className="text-gray-700">{port.name}</p>
+              </div>
+            ))}
+          </div>
+        </section>
+        <section className="text-center mb-8">
+          <h2 className="text-3xl font-semibold mb-4">Specific Ports</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+            {specificPorts.map(port => (
+              <div key={port.id} className="bg-white p-6 rounded-lg shadow-md">
+                <h3 className="text-2xl font-semibold mb-4">Port {port.id}</h3>
+                <p className="text-gray-700">{port.name}</p>
+              </div>
+            ))}
           </div>
         </section>
         <section className="text-center">
